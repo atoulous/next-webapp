@@ -1,4 +1,6 @@
-module.exports = {
+const withOptimizedImages = require('next-optimized-images');
+
+module.exports = withOptimizedImages({
     webpack: (config) => {
         config.module.rules.push({
             test: /\.(graphql|gql)$/,
@@ -16,4 +18,4 @@ module.exports = {
     images: {
         domains: ['images.unsplash.com'],
     },
-};
+});
