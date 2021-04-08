@@ -9,9 +9,9 @@ export default function Home() {
   const { loading, error, data } = useQuery(QUERY_USERS);
 
   // make sure all data is loaded
-  if (loading) {
-    return <p>loading...</p>;
-  }
+  // if (loading) {
+  //   return <p>loading...</p>;
+  // }
   // check for errors
   // if (error) {
   //   return <p>:( an error happened</p>;

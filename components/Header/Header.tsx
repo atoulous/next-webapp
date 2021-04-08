@@ -67,7 +67,7 @@ export default function WithSubnavigation() {
             color={useColorModeValue('gray.800', 'white')}
             alignSelf={'center'}
           >
-            Logoo
+            Logo
           </Text>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/next-webapp.iml" filepath="$PROJECT_DIR$/.idea/next-webapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/tree-webapp.iml" filepath="$PROJECT_DIR$/.idea/tree-webapp.iml" />
     </modules>
   </component>
 </project>
