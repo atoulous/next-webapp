@@ -25,6 +25,8 @@ import {
 import { IoMoon, IoSunny } from 'react-icons/io5';
 import NextLink from 'next/link';
 
+import Logo from 'utils/Logo';
+
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
@@ -61,14 +63,11 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <Text
-            textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-            fontFamily={'heading'}
-            color={useColorModeValue('gray.800', 'white')}
-            alignSelf={'center'}
-          >
-            Logo
-          </Text>
+          <NextLink href={'/'}>
+            <Flex align={{ base: 'center' }}>
+              <Logo color={useColorModeValue('gray.700', 'white')} />
+            </Flex>
+          </NextLink>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />
